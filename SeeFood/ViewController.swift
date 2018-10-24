@@ -10,6 +10,7 @@ import UIKit
 import VisualRecognitionV3
 import SVProgressHUD
 import Social
+import TwitterKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -87,17 +88,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     @IBAction func shareTap(_ sender: UIButton) {
-        
-        
-        
-//        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter){
-//            let vc=SLComposeViewController(forServiceType:SLServiceTypeTwitter)
-//            vc?.setInitialText("My food is \(navigationItem.title)")
-//            vc?.add(imageView.image)
-//            present(vc!,animated: true,completion: nil)
-//        }else{
-//            self.navigationItem.title="Please log in the twitter!"
-//        }
+        let text="My food is \(navigationItem.title!)"
+        let image=imageView.image
+        let activityViewController = UIActivityViewController(activityItems: [text,image!], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView=self.view
+        self.present(activityViewController,animated: true,completion: nil)
+
     }
 }
 

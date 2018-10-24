@@ -18,6 +18,10 @@
 		0F9236DD2180D398003E0587 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236D72180D398003E0587 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F9236DF2180DBDE003E0587 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236D12180D27E003E0587 /* RestKit.framework */; };
 		0F9236E02180DBDE003E0587 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236D12180D27E003E0587 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F9236E521810127003E0587 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236E321810126003E0587 /* TwitterCore.framework */; };
+		0F9236E621810127003E0587 /* TwitterCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236E321810126003E0587 /* TwitterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F9236E721810127003E0587 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236E421810127003E0587 /* TwitterKit.framework */; };
+		0F9236E821810127003E0587 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9236E421810127003E0587 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0F9236DD2180D398003E0587 /* SVProgressHUD.framework in Embed Frameworks */,
+				0F9236E821810127003E0587 /* TwitterKit.framework in Embed Frameworks */,
+				0F9236E621810127003E0587 /* TwitterCore.framework in Embed Frameworks */,
 				0F9236D92180D398003E0587 /* VisualRecognitionV3.framework in Embed Frameworks */,
 				0F9236E02180DBDE003E0587 /* RestKit.framework in Embed Frameworks */,
 			);
@@ -47,6 +53,8 @@
 		0F9236D12180D27E003E0587 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		0F9236D52180D398003E0587 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualRecognitionV3.framework; sourceTree = "<group>"; };
 		0F9236D72180D398003E0587 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = "<group>"; };
+		0F9236E321810126003E0587 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		0F9236E421810127003E0587 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F9236DC2180D398003E0587 /* SVProgressHUD.framework in Frameworks */,
+				0F9236E721810127003E0587 /* TwitterKit.framework in Frameworks */,
+				0F9236E521810127003E0587 /* TwitterCore.framework in Frameworks */,
 				0F9236D82180D398003E0587 /* VisualRecognitionV3.framework in Frameworks */,
 				0F9236DF2180DBDE003E0587 /* RestKit.framework in Frameworks */,
 			);
@@ -66,6 +76,8 @@
 		0F9236A92180D0DA003E0587 = {
 			isa = PBXGroup;
 			children = (
+				0F9236E321810126003E0587 /* TwitterCore.framework */,
+				0F9236E421810127003E0587 /* TwitterKit.framework */,
 				0F9236D12180D27E003E0587 /* RestKit.framework */,
 				0F9236D72180D398003E0587 /* SVProgressHUD.framework */,
 				0F9236D52180D398003E0587 /* VisualRecognitionV3.framework */,
